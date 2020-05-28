@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* mediaquery */
+@media all and (max-width: 992px) {
+  .navbar-center, .navbar-right {
+    display: none;
+  }
+  nav .hamburger .tendina {
+    display: none;
+  }
+
+  nav .hamburger:hover .tendina {
+    display: block;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .hamburger {
+    display: none;
+  }
+}
+/*  */
+/* debug */
+[class*="col-"] {
+  min-height: 50px;
+  border: 1px solid black;
+}
+
+/* header */
+/* navbar */
+nav {
+  height: 50px;
+  /* debug */
+  background-color: coral;
+}
+
+.right-list, .center-list {
+  line-height: 50px;
+  display: inline-block;
+}
+
+nav .navbar-center li, nav .navbar-right li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+nav .navbar-center li a, nav .navbar-right li a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+
+
+nav .logo-sito, nav .navbar-center, nav .navbar-right {
+  width: calc(100% / 3);
+  float: left;
+}
+
+nav .logo-sito {
+  padding-top: 10px;
+}
+
+nav .navbar-center {
+  text-align: center;
+}
+
+nav .navbar-right {
+  text-align: right;
+}
+
+
+nav .logo-sito img {
+  height: 30px;
+  max-width: 160px;
+}
+
+#sign-button {
+  display: inline;
+  border: 1px solid blue;
+  color: blue;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+nav .hamburger {
+  float: right;
+  line-height: 50px;
+}
+
+
+nav .hamburger a {
+  text-decoration: none;
+  color: blue;
+  font-size: 30px;
+}
+
+nav .hamburger .tendina li {
+  list-style: none;
+}
+
+nav .hamburger .tendina li a {
+  display: inline-block;
+  font-size: 20px;
+}
+/* fine navbar */
+
+/* inizio sezione jumbotron */
