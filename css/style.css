@@ -81,8 +81,8 @@ nav .logo-sito img {
 
 #sign-button {
   display: inline;
-  border: 1px solid blue;
-  color: blue;
+  border: 1px solid #1E90FF;
+  color: #1E90FF;
   border-radius: 5px;
   padding: 5px;
 }
@@ -110,3 +110,86 @@ nav .hamburger .tendina li a {
 /* fine navbar */
 
 /* inizio sezione jumbotron */
+#jumbotron {
+  min-height: 500px;
+  background-image: url(../img/jumbo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+}
+
+#jumbotron .title h1 {
+  font-size: 40px;
+  color: #fff;
+}
+
+#jumbotron .title p {
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+#jumbotron .form-title h2 {
+  text-align: center;
+}
+
+#jumbotron .form-title #span-h2 {
+  color: #1E90FF;
+}
+
+#jumbotron .form-title {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+#jumbotron .form-group input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+}
+
+#jumbotron .form-group {
+  margin-bottom: 8px;
+}
+
+#jumbotron .form-title #account-button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  background-color: #1E90FF;
+  border-radius: 2px;
+  padding: 8px;
+}
+
+#jumbotron .google-button  {
+  text-align: center;
+  margin-top: 8px;
+  box-shadow: 1px 1px 1px;
+  border-radius: 2px;
+  position: relative;
+  padding: 8px;
+}
+
+#jumbotron .google-button img {
+  height: 15px;
+  position: absolute;
+  left: 5px;
+  top: 2px;
+}
+
+#jumbotron .google-button a {
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+}
+
+#jumbotron .form-title #agree {
+  display: block;
+  text-align: center;
+  margin-top: 8px;
+}

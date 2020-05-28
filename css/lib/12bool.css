@@ -130,7 +130,7 @@
 }
 
 /* versione tablet -md- */
-@media all and (min-width: 769px) and (max-width: 992px) {
+@media all and (min-width: 769px) {
 
   .clear-md {
     display: block;
