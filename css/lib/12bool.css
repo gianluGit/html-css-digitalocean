@@ -22,6 +22,12 @@
 }
 /*  */
 
+/* centratura */
+.text-center {
+  text-align: center;
+}
+/*  */
+
 /* versione smartphone -xs- */
 @media all and (max-width: 768px) {
 
