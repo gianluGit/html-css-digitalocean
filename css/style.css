@@ -4,9 +4,13 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
 /* mediaquery */
 @media all and (max-width: 992px) {
-  .navbar-center, .navbar-right {
+  nav .col_none {
     display: none;
   }
   nav .hamburger .tendina {
@@ -21,13 +25,17 @@
     margin-top: 80px;
   }
 
-  .margin-xs-md {
+  #tabella .margin-xs-md {
     margin-bottom: 40px;
+  }
+
+  footer .footer-links {
+    padding: 30px 0;
   }
 }
 
 @media all and (min-width: 992px) {
-  .hamburger {
+  nav .hamburger {
     display: none;
   }
 }
@@ -38,16 +46,18 @@
   }
 }
 /*  */
-/* debug */
-[class*="col-"] {
-  min-height: 50px;
-  border: 1px solid black;
-}
+
 
 /* header */
 /* navbar */
 nav {
+  background-color: #fff;
   height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
 }
 
 .right-list, .center-list {
@@ -63,15 +73,15 @@ nav .navbar-center li, nav .navbar-right li {
 
 nav .navbar-center li a, nav .navbar-right li a {
   text-decoration: none;
-  color: black;
+  color: #483D8B;
   display: inline-block;
+  font-weight: bold;
 }
 
-
-nav .logo-sito, nav .navbar-center, nav .navbar-right {
-  width: calc(100% / 3);
-  float: left;
+nav .navbar-center li a:hover, nav .navbar-right li a:hover {
+  color: #1E90FF;
 }
+
 
 nav .logo-sito {
   padding-top: 10px;
@@ -88,7 +98,7 @@ nav .navbar-right {
 
 nav .logo-sito img {
   height: 30px;
-  max-width: 160px;
+  max-width: 100%;
 }
 
 #sign-button {
@@ -98,6 +108,11 @@ nav .logo-sito img {
   color: #1E90FF;
   border-radius: 5px;
   padding: 5px;
+}
+
+nav #sign-button:hover {
+  color: #fff;
+  background-color: #1E90FF;
 }
 
 nav .hamburger {
@@ -113,10 +128,11 @@ nav .hamburger a {
   color: #1E90FF;;
   font-size: 30px;
   display: inline-block;
+  font-weight: bold;
 }
 
+
 nav .hamburger .tendina {
-  /* border-left: 1px solid #fff; */
   background-color: #fff;
   border-radius: 5px;
 }
@@ -136,7 +152,8 @@ nav .hamburger .tendina li a {
 
 /* inizio sezione jumbotron */
 #jumbotron {
-  min-height: 500px;
+  margin-top: 50px;
+  min-height: 600px;
   background-image: url(../img/jumbo.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -151,6 +168,7 @@ nav .hamburger .tendina li a {
 #jumbotron .title p {
   margin-bottom: 30px;
   color: #fff;
+  line-height: 25px;
 }
 
 #jumbotron .form-title h2 {
@@ -232,11 +250,12 @@ nav .hamburger .tendina li a {
 
 #loghi .loghi-title h5 {
   margin: 30px 0;
+  color: grey;
 }
 
 #loghi .loghi-image img {
   height: 80px;
-  width: 100%;
+  max-width: 100%;
 }
 
 #loghi .view a {
@@ -244,9 +263,23 @@ nav .hamburger .tendina li a {
   text-decoration: none;
   font-weight: bold;
   margin: 30px 0;
+  color: #1E90FF;
+}
+
+#loghi .view a::after {
+  content: "\003E";
+  margin-left: 10px;
+}
+
+#loghi .view a:hover {
+  text-decoration: underline;
 }
 
 /* sezione deploy */
+#deploy {
+  padding: 40px 0;
+}
+
 #deploy .deploy-text h2 {
   color: #483D8B;
 }
@@ -254,6 +287,7 @@ nav .hamburger .tendina li a {
 #deploy .deploy-text p {
   margin: 20px 0;
   color: grey;
+  line-height: 25px;
 }
 
 #deploy .content-list {
@@ -276,6 +310,7 @@ nav .hamburger .tendina li a {
 #deploy .content-cluster p {
   margin-bottom: 25px;
   color: grey;
+  line-height: 20px;
 }
 
 /* primo carousel */
@@ -357,10 +392,18 @@ nav .hamburger .tendina li a {
 
 #features .content-predictable p {
   margin-bottom: 10px;
+  color: grey;
+  line-height: 20px;
 }
 
 #features .content-predictable a {
   text-decoration: none;
+  color: #1E90FF;
+}
+
+#features .content-predictable a::after {
+  content: "\003E";
+  margin-left: 10px;
 }
 
 /* sezione tabella */
@@ -387,7 +430,7 @@ nav .hamburger .tendina li a {
 
 #tabella .table-row .content-table-left, #tabella .table-row .content-table-center, #tabella .table-row .content-table-right {
   float: left;
-  padding: 8px;
+  padding: 6px;
 }
 
 #tabella .table-row .content-table-left, #tabella .table-row .content-table-right {
@@ -439,4 +482,47 @@ nav .hamburger .tendina li a {
   text-decoration: none;
   padding: 10px;
 }
+
+#get-started #sign-button:hover {
+  color: #fff;
+  background-color: #1E90FF;
+}
 /* fine main */
+
+/* footer */
+footer {
+  background-color: #000080;
+  padding: 30px 0;
+}
+
+footer .logo-footer span {
+  display: block;
+  color: lightgrey;
+}
+
+
+footer .social-logo a {
+  margin-right: 7px;
+  text-decoration: none;
+  color: lightgrey;
+  font-size: 20px;
+}
+
+footer .social-logo {
+  margin-top: 5px;
+}
+
+footer .footer-links h4 {
+  color: #fff;
+}
+
+footer .footer-links a {
+  display: block;
+  text-decoration: none;
+  color: lightgrey;
+  line-height: 25px;
+}
+
+footer a:hover {
+  color: #1E90FF;
+}

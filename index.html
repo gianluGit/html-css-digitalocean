@@ -3,36 +3,44 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/lib/12bool.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Digital Ocean</title>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="padding-xs">
         <div class="container">
           <div class="col-xs-12 col-md-12 col-lg-12">
             <div class="container">
-              <div class="logo-sito">
-                <img src="img/logo.png" alt="logo">
+              <div class="col-xs-4 col-md-4">
+                <div class="logo-sito">
+                  <a href="#"><img src="img/logo.png" alt="logo"></a>
+                </div>
               </div>
 
-              <div class="navbar-center">
-                <ul class="center-list">
-                  <li><a href="#">Products</a></li>
-                  <li><a href="#">Customers</a></li>
-                  <li><a href="#">Community</a></li>
-                  <li><a href="#">Pricing</a></li>
-                </ul>
+              <div class="col-lg-4 col_none">
+                <div class="navbar-center">
+                  <ul class="center-list">
+                    <li><a href="#">Products &#8744;</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">Community &#8744;</a></li>
+                    <li><a href="#">Pricing</a></li>
+                  </ul>
+                </div>
               </div>
 
-              <div class="navbar-right">
-                <ul class="right-list">
-                  <li><a href="#">Docs</a></li>
-                  <li><a href="#">Support</a></li>
-                  <li><a href="#">Login</a></li>
-                  <li><a id="sign-button" href="#">Sign Up</a></li>
-                </ul>
+              <div class="col-xs-4 col-lg-4 col_none">
+                <div class="navbar-right">
+                  <ul class="right-list">
+                    <li><a href="#">Docs</a></li>
+                    <li><a href="#">Support &#8744;</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a id="sign-button" href="#">Sign Up</a></li>
+                  </ul>
+                </div>
               </div>
 
               <div class="hamburger">
@@ -53,12 +61,12 @@
       <section id="jumbotron">
         <div class="container">
           <div class="col-xs-12 col-md-6">
-            <div class="title">
+            <div class="title padding-xs">
               <h1>The simplest cloud <br> platform for <br> developers &#38; teams</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
           </div>
-          <div class="col-xs-12 col-md-6">
+          <div class="col-xs-12 col-md-6 padding-xs">
             <div class="form-title">
               <h2>Deploy your app in seconds. <br> <span id="span-h2">Get started now.</span></h2>
               <form class="form-group" action="index.html" method="post">
@@ -84,7 +92,7 @@
     <main>
       <section id="loghi">
         <div class="container">
-          <div class="col-xs-12 col-md-12">
+          <div class="col-xs-12 col-md-12 padding-xs">
             <div class="loghi-title text-center">
               <h5>INNOVATIVE BUSINESSES TRUST DIGITAL OCEAN</h5>
             </div>
@@ -121,7 +129,7 @@
               </div>
               <div class="col-xs-12 col-md-12">
                 <div class="view text-center">
-                  <a href="#">View customers stories &#62;</a>
+                  <a href="#">View customers stories</a>
                 </div>
               </div>
 
@@ -134,7 +142,7 @@
       <section id="deploy">
         <div class="container">
           <div class="col-xs-12 col-md-12">
-            <div class="deploy-text text-center">
+            <div class="deploy-text padding-xs text-center">
               <h2>Deploy and scale seamlessly</h2>
               <p>Our optimixed configuration process seves your team time when running and scaling distribuited applications, AI <br> &#38; machine learning workloads hosted services, client websites, or CI/CD environments.</p>
             </div>
@@ -142,7 +150,7 @@
 
           <div class="container">
             <div class="col-xs-12 col-md-4">
-              <div class="content-list">
+              <div class="content-list padding-xs">
                 <div>Deploy</div>
                 <div>Manage</div>
                 <div>Secure</div>
@@ -154,22 +162,14 @@
               <!-- nest -->
               <div class="container">
                 <div class="col-xs-12 col-md-6">
-                  <div class="content-cluster">
+                  <div class="content-cluster padding-xs">
                     <img src="img/ico2.svg" alt="ico">
                     <h3>Cluster Deployments</h3>
                     <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
                   </div>
                 </div>
                 <div class="col-xs-12 col-md-6">
-                  <div class="content-cluster">
-                    <img src="img/ico2.svg" alt="ico">
-                    <h3>Cluster Deployments</h3>
-                    <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
-                  </div>
-
-                </div>
-                <div class="col-xs-12 col-md-6">
-                  <div class="content-cluster">
+                  <div class="content-cluster padding-xs">
                     <img src="img/ico2.svg" alt="ico">
                     <h3>Cluster Deployments</h3>
                     <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
@@ -177,7 +177,15 @@
 
                 </div>
                 <div class="col-xs-12 col-md-6">
-                  <div class="content-cluster">
+                  <div class="content-cluster padding-xs">
+                    <img src="img/ico2.svg" alt="ico">
+                    <h3>Cluster Deployments</h3>
+                    <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
+                  </div>
+
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <div class="content-cluster padding-xs">
                     <img src="img/ico2.svg" alt="ico">
                     <h3>Cluster Deployments</h3>
                     <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
@@ -228,27 +236,27 @@
           </div>
 
           <div class="col-xs-12 col-md-4">
-            <div class="content-predictable">
+            <div class="content-predictable padding-xs">
               <img src="img/ico5.svg" alt="ico">
               <h3>Predictable Pricing</h3>
               <p>Leave complex pricing structures behind. Always <br> know what you'll play per month with a flat, <br> industry-leading pricing structure.</p>
-              <a href="#">Pricing &#62;</a>
+              <a href="#">Pricing</a>
             </div>
           </div>
           <div class="col-xs-12 col-md-4">
-            <div class="content-predictable">
+            <div class="content-predictable padding-xs">
               <img src="img/ico5.svg" alt="ico">
               <h3>Predictable Pricing</h3>
               <p>Leave complex pricing structures behind. Always <br> know what you'll play per month with a flat, <br> industry-leading pricing structure.</p>
-              <a href="#">Pricing &#62;</a>
+              <a href="#">Pricing</a>
             </div>
           </div>
           <div class="col-xs-12 col-md-4">
-            <div class="content-predictable">
+            <div class="content-predictable padding-xs">
               <img src="img/ico5.svg" alt="ico">
               <h3>Predictable Pricing</h3>
               <p>Leave complex pricing structures behind. Always <br> know what you'll play per month with a flat, <br> industry-leading pricing structure.</p>
-              <a href="#">Pricing &#62;</a>
+              <a href="#">Pricing</a>
             </div>
           </div>
 
@@ -257,7 +265,7 @@
 
       <!-- sezione tabella sfondo blu-->
       <section id="tabella">
-        <div class="container">
+        <div class="container padding-xs">
           <div class="col-xs-12 col-md-12">
             <div class="table-title text-center">
               <h2>Service your customers around the world from 12 regions.</h2>
@@ -460,8 +468,83 @@
 
     <!-- footer -->
     <footer>
+      <div class="container padding-xs">
+        <div class="col-xs-12 col-md-12 col-lg-4">
+          <div class="logo-footer">
+            <img src="img/logo-mark.svg" alt="logo">
+            <span>&#169; 2018 Digital Ocean, LLC. All right reserved.</span>
+            <span>Proudly made in NY</span>
+          </div>
 
-      
+          <div class="social-logo">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+          </div>
+
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-2">
+          <div class="footer-links">
+            <h4>Company</h4>
+            <a href="#">About</a>
+            <a href="#">Leadership</a>
+            <a href="#">Link</a>
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+            <a href="#">Partner Network</a>
+            <a href="#">Rafferal Program</a>
+            <a href="#">Events</a>
+            <a href="#">Press</a>
+            <a href="#">Legal &#38; Security</a>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-6 col-lg-2">
+          <div class="footer-links">
+            <h4>Products</h4>
+            <a href="#">About</a>
+            <a href="#">Leadership</a>
+            <a href="#">Link</a>
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+            <a href="#">Partner Network</a>
+            <a href="#">Rafferal Program</a>
+            <a href="#">Events</a>
+            <a href="#">Press</a>
+            <a href="#">Legal &#38; Security</a>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-6 col-lg-2">
+          <div class="footer-links">
+            <h4>Community</h4>
+            <a href="#">About</a>
+            <a href="#">Leadership</a>
+            <a href="#">Link</a>
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+            <a href="#">Partner Network</a>
+            <a href="#">Rafferal Program</a>
+            <a href="#">Events</a>
+            <a href="#">Press</a>
+            <a href="#">Legal &#38; Security</a>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-6 col-lg-2">
+          <div class="footer-links">
+            <h4>Support</h4>
+            <a href="#">Contact support</a>
+            <a href="#">FAQ</a>
+            <a href="#">Network Status</a>
+          </div>
+        </div>
+
+
+      </div>
+
     </footer>
   </body>
 </html>

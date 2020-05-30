@@ -28,8 +28,16 @@
 }
 /*  */
 
+
 /* versione smartphone -xs- */
 @media all and (max-width: 768px) {
+
+  /* padding per la versione smartphone e tablet */
+  .padding-xs {
+    padding: 0 30px;
+  }
+  /*  */
+
 
   .clear-xs {
     display: block;
