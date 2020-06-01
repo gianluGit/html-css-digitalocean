@@ -17,6 +17,7 @@ body {
     display: none;
   }
 
+
   nav .hamburger:hover .tendina {
     display: block;
   }
@@ -34,7 +35,8 @@ body {
   }
 }
 
-@media all and (min-width: 992px) {
+
+@media all and (min-width: 993px) {
   nav .hamburger {
     display: none;
   }
@@ -82,17 +84,13 @@ nav .navbar-center li a:hover, nav .navbar-right li a:hover {
   color: #1E90FF;
 }
 
+nav .navbar-right {
+  text-align: right;
+}
+
 
 nav .logo-sito {
   padding-top: 10px;
-}
-
-nav .navbar-center {
-  text-align: center;
-}
-
-nav .navbar-right {
-  text-align: right;
 }
 
 
@@ -141,6 +139,18 @@ nav .hamburger .tendina li {
   list-style: none;
   border-bottom: 1px solid #1E90FF;
   padding-right: 10px;
+}
+
+nav .hamburger .tendina li:last-child {
+  border: none;
+}
+
+nav .hamburger .tendina li:hover {
+  background-color: #1E90FF;
+}
+
+nav .hamburger .tendina li:hover a {
+  color: #fff;
 }
 
 nav .hamburger .tendina li a {
@@ -292,7 +302,7 @@ nav .hamburger .tendina li a {
 
 #deploy .content-list {
   margin-left: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   border-left: 2px solid grey;
 }
 
@@ -300,6 +310,15 @@ nav .hamburger .tendina li a {
   margin: 20px 0 0 10px;
   font-size: 20px;
   color: grey;
+}
+
+#deploy .content-list a {
+  text-decoration: none;
+  color: grey;
+}
+
+#deploy .content-list a:hover {
+  color: #1E90FF;
 }
 
 #deploy .content-cluster h3 {
@@ -375,6 +394,12 @@ nav .hamburger .tendina li a {
 #carousel .carousel-pallini span:first-of-type {
   background-color: blue;
 }
+
+/* titolo secondo carousel */
+#carousel #carousel-title2 {
+  margin-bottom: 50px;
+}
+/*  */
 
 /* sezione features */
 #features {
